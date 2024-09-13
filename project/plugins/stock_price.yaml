@@ -1,0 +1,31 @@
+name: stock_price
+enabled: true
+required: false
+description: >-
+  The stockPricePlugin will connect to the yahoo finance api and provide the realtime stock data.
+  It retieve and return the information based on provided stock symbol ,including description.
+ 
+parameters:
+  - name: stock_symbol
+    type: str
+    required: true
+    description: >-
+      the input will be the stock symbol for which the stock price it will provide .
+  - name: start_date
+    type: str
+    required: true
+    description: >-
+      the input will be the start date from where we want the data from.
+  - name: end_date
+    type: str
+    required: true
+    description: >-
+      the input will be the end date till where the data will be .
+    default: None
+ 
+returns:
+  - name: stock_data
+    type: pandas.core.series.Series
+    description: >-
+      The stock price returns dataframe of the stock prices over the time frame
+       
