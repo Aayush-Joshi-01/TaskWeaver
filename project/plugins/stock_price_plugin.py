@@ -11,5 +11,5 @@ class GetStockPriceplugin(Plugin):
    @staticmethod
    def __call__(stock_symbol:str, start_date:str, end_date:str):
       stock=yf.Ticker(stock_symbol)
-      stock_data = stock.get_shares_full(start=start_date, end=end_date)
+      stock_data = stock.history(period='1d', start=start_date, end=end_date)
       return stock_data

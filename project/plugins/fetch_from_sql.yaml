@@ -1,0 +1,41 @@
+name: fetch_from_sql
+enabled: true
+required: false
+description: >-
+  This plugin retrieves data from a MySQL database using a SQL query.
+  The input is the host, user, password, database, and SQL query.
+
+parameters:
+  - name: host
+    type: str
+    required: true
+    description: >-
+      The hostname or IP address of the MySQL server.
+  - name: user
+    type: str
+    required: true
+    description: >-
+      The username to use for the MySQL connection.
+  - name: password
+    type: str
+    required: true
+    description: >-
+      The password to use for the MySQL connection.
+  - name: db
+    type: str
+    required: true
+    description: >-
+      The name of the MySQL database to connect to.
+  - name: query
+    type: str
+    required: true
+    description: >-
+      The SQL query to execute.
+
+returns:
+  - name: data
+    type: list
+    description: >-
+      The query result as a list of dictionaries.
+
+configuration:

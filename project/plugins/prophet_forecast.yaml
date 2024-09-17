@@ -1,0 +1,27 @@
+name: prophet_forecast
+enabled: true
+required: false
+description: >-
+  This plugin performs time series forecasting using the Prophet model.
+  The input is a time series data and the last date index, 
+  and the output is a forecasted time series data with the forecasted dates as index.
+
+parameters:
+  - name: series
+    type: list
+    required: true
+    description: >-
+      The time series data to be forecasted.
+  - name: last_date_index
+    type: str
+    required: true
+    description: >-
+      The last date index of the input time series data.
+
+returns:
+  - name: forecast
+    type: dict
+    description: >-
+      The forecasted time series data with the forecasted dates as index.
+
+configuration:

@@ -25,7 +25,7 @@ parameters:
  
 returns:
   - name: stock_data
-    type: pandas.core.series.Series
+    type: pandas object
     description: >-
-      The stock price returns dataframe of the stock prices over the time frame
+      The stock price returns dataframe of the stock prices over the time frame inlcudes [ Open    High    Low     Close   Adj Close   Volume] and Date as index
        

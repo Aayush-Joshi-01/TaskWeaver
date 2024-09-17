@@ -1,0 +1,33 @@
+name: 3d_plot
+enabled: false
+required: false
+description: >-
+  This plugin creates a 3D plot using Plotly Express and opens it in a new browser window.
+  The input is the data, x-axis, y-axis, and z-axis.
+
+parameters:
+  - name: data
+    type: list
+    required: true
+    description: >-
+      The data to plot.
+  - name: x_axis
+    type: str
+    required: true
+    description: >-
+      The column name for the x-axis.
+  - name: y_axis
+    type: str
+    required: true
+    description: >-
+      The column name for the y-axis.
+  - name: z_axis
+    type: str
+    required: true
+    description: >-
+      The column name for the z-axis.
+
+returns:
+  - None
+
+configuration:

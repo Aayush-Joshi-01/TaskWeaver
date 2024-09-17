@@ -1,0 +1,32 @@
+name: s3_fetch
+enabled: true
+required: false
+description: >-
+  This plugin fetches data from an S3 bucket.
+  The input is the S3 bucket URL, AWS access key ID, and AWS secret access key, 
+  and the output is the fetched data as a dictionary.
+
+parameters:
+  - name: s3_bucket_url
+    type: str
+    required: true
+    description: >-
+      The URL of the S3 bucket object to fetch.
+  - name: aws_access_key_id
+    type: str
+    required: true
+    description: >-
+      The AWS access key ID to use for authentication.
+  - name: aws_secret_access_key
+    type: str
+    required: true
+    description: >-
+      The AWS secret access key to use for authentication.
+
+returns:
+  - name: data
+    type: dict
+    description: >-
+      The fetched data as a dictionary.
+
+configuration:

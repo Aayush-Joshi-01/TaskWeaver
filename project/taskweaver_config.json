@@ -1,6 +1,10 @@
 {
-  "llm.api_type": "google_genai",
-  "llm.google_genai.api_key": "AIzaSyAPpwjAZJqjg0h6wrc_3j3o6eweIfJPzWE",
-  "llm.google_genai.model": "gemini-pro",
+  "llm.api_base":"https://acsspdemo.openai.azure.com",
+  "llm.api_key":"",
+  "llm.api_type":"azure",
+  "api_version":"2023-07-01-preview",
+  "llm.auth_mode":"api-key",
+  "llm.model":"gpt3516k",
+  "llm.response_format": null,
   "execution_service.kernel_mode":"local"
-  }
+}
